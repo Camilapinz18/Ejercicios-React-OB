@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-//import ‘../../styles/clock.scss’;
+import '../styles/clock.scss'
 
 const ClockHook = () => {
 
@@ -36,12 +36,9 @@ const ClockHook = () => {
 
     return (
         <div>
-            <h2>
-                Hora Actual:
-                {state.fecha.toLocaleTimeString()}
-            </h2>
+            <h2>Hora Actual: {state.fecha.toLocaleTimeString()}</h2>
             <h3>{state.nombre} {state.apellidos}</h3>
-            <h1>Edad: {state.edad}</h1>
+            <h3>Edad: {state.edad}</h3>
         </div>
     )
 }

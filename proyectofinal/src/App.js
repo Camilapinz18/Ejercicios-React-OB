@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import TaskListComponent from './components/container/TaskListComponent';
+import React from 'react';
+import GreetingStyled from './components/pure/forms/greetingStyled'
  {/*Importa el componente Greeting*/}
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
         {/*<GreetingF name="Pedro"></GreetingF>*/}
 
         {/*COmponente de listado de tareas*/}
-        <TaskListComponent></TaskListComponent>
+
+      <GreetingStyled name='Camila'></GreetingStyled>
    
       </header>
     </div>

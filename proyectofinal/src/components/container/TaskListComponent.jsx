@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Levels } from '../../models/levels.enum';
 import { Task } from '../../models/taks.class';
 import TaskComponent from '../pure/taskComponent';
+import "../../styles/task.scss"
 
 const TaskListComponent=() => {
     //Estado del componente:
