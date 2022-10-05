@@ -1,13 +1,19 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import PropTypes from 'prop-types'
 import { Task } from '../../models/taks.class';
 
 const TaskComponent=({task})=>{
+
+    useEffect(() => {
+        console.log("Created task");
+        return () => {
+            console.log("Task ${task.name} is going to unmount");
+        };
+    }, [task]);
     return(
         <div>
             <h2>
                 Nombre: {task.name}
-                
             </h2>
             <h3>
                 Descripción:{task.description}
